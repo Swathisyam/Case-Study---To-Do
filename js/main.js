@@ -11,7 +11,15 @@ $(document).ready(function(){
 
                 for (var i=0; i<todo.length; i++){
                     var row = $("<tr><td>" +"<input type='checkbox' >"+"</td><td>" + "</td><td>" + todo[i].title + "</td><td> " + "</td><td>" + todo[i].completed + "</td></tr> ");
-                
+                if (todo[i].completed == true)
+
+                {
+                    row+= "<tr><td> <input type='checkbox' disabled> </td></tr>"
+                }
+                // if (todo[i].completed == false)
+                // {
+                //     row+= "<tr><td> <input type='checkbox'> </td></tr>"
+                // }
                     $('#myTable').append(row);
                 }
             },
