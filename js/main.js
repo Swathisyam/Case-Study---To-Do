@@ -11,15 +11,13 @@ $(document).ready(function(){
 
                 for (var i=0; i<todo.length; i++){
                     var row = $("<tr><td>" +"<input type='checkbox' >"+"</td><td>" + "</td><td>" + todo[i].title + "</td><td> " + "</td><td>" + todo[i].completed + "</td></tr> ");
-                    
-                    
-                    
+                
                     $('#myTable').append(row);
                 }
             },
-            // error: function(jqXHR, Status, errorThrown){
-            //     // alert('Error: ' + Status + '-' + errorThrown);
-            // }
+            error: function(jqXHR, Status, errorThrown){
+                alert('Error: ' + Status + '-' + errorThrown);
+            }
     })      
     });
 
@@ -35,8 +33,8 @@ function check(){
             reject("error");
         }
     });
-    promise.then(function(t){
-        alert(t);
+    promise.then(function(Notselected){
+        alert(Notselected);
 
     })
     .catch(function (c){
@@ -49,12 +47,3 @@ function check(){
 
 
 
-// function myFunction() {
-//   var checkBox = document.getElementById("myCheck");
-//   var text = document.getElementById("text");
-//   if (checkBox.checked == true){
-//     text.style.display = "block";
-//   } else {
-//      text.style.display = "none";
-//   }
-// }

@@ -1,15 +1,43 @@
 
-$( "form" ).submit(function( event ) {
-  if ( $( "input" ).first().val() === "admin"  &&   $( "input" ).second().val() === 12345 ) {
-      alert("valiadtion success")
+function validate(callback){
+
+    
+  if( document.getElementById("u_name").value == "admin"){
+    // alert("Good");
   
-    return;
-  }
+        if (document.getElementById("pwd").value == 12345 ){
+              alert("Validation Success ");
+             
+              callback();
+
+         }  else{
+                  alert("Incorrect Password");
+                  return false;
+                }
+         }  else{
+                  alert("Username incorrect");
+                  return false;
+         }
+
+        } 
+  function callback(){
+  window.location.href ="main.html"
+}
+
+// $(document).ready(function(){
+
+// $( "form" ).submit(function( event ) {
+//   if ( $( "input" ).first().val() === "admin"  &&   $( "input" ).second().val() === 12345 ) {
+//       alert("valiadtion success")
+   
+//     return;
+//   }
  
   
-  alert("validation failed")
-  event.preventDefault();
-});
+//   alert("validation failed")
+//   event.preventDefault();
+// });
+// })
 
 
 // Using Callback 

@@ -82,29 +82,28 @@ th {
   padding: 14px 10px;
 }
 
-input[type="button"]{
-  size: 3px;
+#done{
+  
   color: crimson;
   border-radius: 500px;
   background: rosybrown;
   /* display: block; */
   text-align: center;
-  padding: 14px 10px; 
+  /* padding: 14px 10px;  */
   width: 200px;
   outline: none;
   color: black;
   font-size: large;
-  margin-left: 250px;
-  padding-top: 4%;
-  margin-bottom: 15%;
+  margin-left: 40%;
+  
 }
 
-input[type="button"]:hover{
-  background-color: salmon;
+#done:hover{
+  background-color: rgb(199, 28, 9);
   transition: 0.15s;
   cursor: pointer;
   border-radius: 500px;
-  border-style: dotted;
+  
   color: seagreen;
   font-size: larger;
   
