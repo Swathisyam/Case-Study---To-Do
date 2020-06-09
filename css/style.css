@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+    padding-top:50px;
+    color:#646464;
+    background-color:#efefef;
+  }
+  /* .navbar-form input, .form-inline input {
+    width:auto;
+  }
+  
+  /* .form-inline .form-controlpull-left{
+    width: 90px;
+  } */
+  h1,h2,h3,.highlight,.navbar a,.head1 h4 {
+    font-family:'Oswald',arial narrow,sans-serif;
+  } */
+
+  
+#myTable{
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+tr{
+  font-size: larger;
+}
+tr:hover {
+  
+  color: indianred ;
+  font-size: larger;
+  /* background-color: rgb(181, 243, 200); */
+
+}
+/* tr:nth-child(even){
+  background-color: #f2f2f2;
+} */
+
+header {
+  font-size: larger;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-align: right;
+}
+/* .nav{
+  text-align: right;
+  margin-right: 2%;
+} */
+
+#myTable,  td 
+{   
+  vertical-align: top;
+  margin-left: 20%;
+  /* font-weight: 600; */
+  /* border: dotted 1px rgb(209, 32, 32); */
+  /* border-collapse: collapse; */
+  padding: 14px 10px;
+  /* text-align: center; */
+}
+td{
+  /* padding-left: 5%; */
+  padding-top: 2%;
+}
+#myTable{
+  /* border: 15px solid coral; */
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {border-color: rgb(97, 247, 105);}
+  50% {box-shadow: 10px 20px 30px rgb(6, 151, 55);}
+}
+th {
+  font-family: monospace;
+  font-size: larger;
+  font-weight:bold;
+  background-image: url(s1.jpg);
+  color: seashell;
+  text-align: center;
+  padding: 14px 10px;
+}
+
+input[type="button"]{
+  size: 3px;
+  color: crimson;
+  border-radius: 500px;
+  background: rosybrown;
+  /* display: block; */
+  text-align: center;
+  padding: 14px 10px; 
+  width: 200px;
+  outline: none;
+  color: black;
+  font-size: large;
+  margin-left: 250px;
+  padding-top: 4%;
+  margin-bottom: 15%;
+}
+
+input[type="button"]:hover{
+  background-color: salmon;
+  transition: 0.15s;
+  cursor: pointer;
+  border-radius: 500px;
+  border-style: dotted;
+  color: seagreen;
+  font-size: larger;
+  
+}
+
+
+.footer {
+  position: fixed;
+  height: 2em;
+  padding-top: 9px;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color:rgba(178, 145, 253, 0.815);
+ color:black;
+ text-align: center;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size: larger;
+}
+
+input[type=checkbox]{
+  height: 20px;
+  color: green;
+  size: 6px;
+}
