@@ -14,7 +14,7 @@ $(document).ready(function(){
                 if (todo[i].completed == true)
 
                 {
-                    row+= "<tr><td> <input type='checkbox' disabled> </td></tr>"
+                    var row = $("<tr><td>" +"<input type='checkbox' disabled >"+"</td><td>" + "</td><td>" + todo[i].title + "</td><td> " + "</td><td>" +  "</td></tr> ");
                 }
                 // if (todo[i].completed == false)
                 // {
